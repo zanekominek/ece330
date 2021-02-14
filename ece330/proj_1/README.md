@@ -1,0 +1,4 @@
+--Zane Kominek
+--Project 1 readme
+-- added modules "transpose to matrix_static and matrix_dynamic files.  Test files were appended so that matrix a is printed, transposed, and then new matrix printed after existing operations are executed.  
+--make with gcc
