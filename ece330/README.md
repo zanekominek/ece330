@@ -1,1 +1,2 @@
-//Testing git setup ztk
+//heartrate monitor proj_2
+//compiled with G++ and make
