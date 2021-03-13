@@ -37,18 +37,27 @@ class Heartrates{
         cin >> birth_day;
 
     cout<<"Data for:"<<firstname<< "  "<<lastname<<endl;
-        cout<< "Your date of birth in the format dd/mm/yyyy is:"<<birth_day<<"/"<<birth_month<<"/"<<birth_year<<endl;
+        cout<< "Your date of birth in the format mm/dd/yyyy is:"<<birth_month<<"/"<<birth_day<<"/"<<birth_year<<endl;
         cout<<"\n\n";
     }
    void getAge ()
     {
-        cout<<"Enter the current date dd/mm/yyyy \n";
-        cout<<"Day: ";
-        cin>>current_day;
+        cout<<"Enter the current date mm/dd/yyyy \n";
+
         cout<<"month:";
         cin>>current_month;
-        cout<<"year:";
+        cout<<"Day: ";
+        cin>>current_day;
+	cout<<"year:";
         cin>> current_year;
+	age = current_year-birth_year;
+	if (birth_month>current_month){
+	age--;	
+	}
+	if(birth_month=current_month ||birth_day>current_day){
+		age--;
+	}
+	
     }
 
 
