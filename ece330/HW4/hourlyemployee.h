@@ -8,10 +8,14 @@ using namespace std;
 class HourlyEmployee : public Employee{
 
 public:
-
+	void setRate(double rate);
+	double getRate() const;
+	void setHours(double hours);
+	double getHours() const;
+	void printEmployee();
 private:
-	double rate;
-	double hours;
+	double myRate;
+	double myHours;
 };
 
 #endif

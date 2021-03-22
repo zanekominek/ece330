@@ -8,10 +8,12 @@ using namespace std;
 class SalariedEmployee : public Employee{
 
 public:
-
+	double getSalary();
+	void setSalary(double salary);
+	void printEmployee();
 private: 
 
-double salary;
+double mySalary;
 
 
 };
