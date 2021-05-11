@@ -3,7 +3,7 @@
 
 import pandas as pd
 import matplotlib.pyplot as plt
-values = pd.read_csv("plots330.csv")
+values = pd.read_csv("myfile.txt")
 y = list(map(float, values.columns))
 x = list(range(0,100))
 for i in range(1,99):
